@@ -16,7 +16,7 @@ document.getElementById('convertButton').addEventListener('click', () => {
     }else {
         let resultat = tempCelsius * 9 / 5 + 32;
 
-        document.getElementById('result').innerText += ` ${resultat}°F`;
+        document.getElementById('result').innerText = `Résultat: ${resultat}°F`;
         document.getElementById('ulCalcule').innerHTML += `<li>${tempCelsius}°C = ${resultat}°F</li>`;
     }
 });
