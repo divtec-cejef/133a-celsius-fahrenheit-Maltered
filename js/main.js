@@ -23,5 +23,5 @@ document.getElementById('convertButton').addEventListener('click', () => {
 
 document.getElementById('resetButton').addEventListener('click', () => {
     document.getElementById('ulCalcule').innerHTML = '';
-    document.getElementById('ulCalcule').innerHTML = "Résultat: ";
+    document.getElementById('result').innerHTML = "Résultat: ";
 });
