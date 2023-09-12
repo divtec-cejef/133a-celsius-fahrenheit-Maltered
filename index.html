@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 <img src="img/js-logo.png" alt="Logo JavaScript">
@@ -13,9 +14,12 @@
     <input id="inputCelsius" type="text">
     <button id="convertButton">Convertir</button>
     <button id="resetButton">Réinitialiser</button>
-    <p id="result">Résultat: </p>
+    <span class="resultDiv">
+        <p>Résultat: </p>
+        <p id="result"></p>
+    </span>
     <h2>Historique</h2>
-    <ul id="ulCalcule"></ul>
+    <ul id="ul-calcule"></ul>
 </div>
 <!-- JavaScript -->
 <script src="js/main.js"></script>

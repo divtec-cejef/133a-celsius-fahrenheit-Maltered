@@ -7,7 +7,8 @@
 
 'use strict'; // Demande un interprétation stricte du code
 
-document.getElementById('convertButton').addEventListener('click', () => {
+
+function calculerTemp() {
     let tempCelsius = document.getElementById('inputCelsius').value;
     tempCelsius = parseInt(tempCelsius);
 
@@ -16,12 +17,17 @@ document.getElementById('convertButton').addEventListener('click', () => {
     }else {
         let resultat = tempCelsius * 9 / 5 + 32;
 
-        document.getElementById('result').innerText = `Résultat: ${resultat}°F`;
-        document.getElementById('ulCalcule').innerHTML += `<li>${tempCelsius}°C = ${resultat}°F</li>`;
+        document.getElementById('result').innerHTML = `⠀${resultat}°F`;
+        document.getElementById('ul-calcule').innerHTML += `<li>${tempCelsius}°C = 
+                                                                          ${resultat}°F</li>`;
     }
+}
+
+document.getElementById('convertButton').addEventListener('click', () => {
+    calculerTemp();
 });
 
 document.getElementById('resetButton').addEventListener('click', () => {
-    document.getElementById('ulCalcule').innerHTML = '';
-    document.getElementById('result').innerHTML = "Résultat: ";
+    document.getElementById('ul-calcule').innerHTML = '';
+    document.getElementById('result').innerHTML = '';
 });
